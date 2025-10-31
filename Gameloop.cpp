@@ -22,7 +22,7 @@ void DrawGame()
 	DrawText("Version 0.1", 1, 1, 20, RED);
 	if (CheckCollision())
 	{
-		DrawText("Collision", 100, 100, 20, RED);
+		DrawText("Collision", GetScreenWidth() /2 ,GetScreenHeight() / 2, 20, RED);
 	}
 }
 
