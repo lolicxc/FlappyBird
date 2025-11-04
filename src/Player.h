@@ -6,11 +6,13 @@ struct Player
 	int yPos;
 	int width;
 	int height;
-	float speed;
 	bool isAlive;
+	float velocityY;
 };
+
 extern Player player;
 
 void InitPlayer();
 void UpdatePlayer();
 void DrawPlayer();
+bool CheckPlayerBounds();

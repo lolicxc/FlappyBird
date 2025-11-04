@@ -7,6 +7,7 @@ struct Obstacle
 	int width;
 	int height;
 	float speed;
+	int space;
 };
 
 extern Obstacle obstacle;

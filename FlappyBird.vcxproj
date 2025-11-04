@@ -20,16 +20,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Gameloop.h" />
+    <ClInclude Include="src\GameOverScreen.h" />
     <ClInclude Include="src\Obstacles.h" />
     <ClInclude Include="src\Player.h" />
     <ClInclude Include="src\RunGame.h" />
+    <ClInclude Include="src\Screens.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Gameloop.cpp" />
+    <ClCompile Include="src\GameOverScreen.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Obstacles.cpp" />
     <ClCompile Include="src\Player.cpp" />
     <ClCompile Include="src\RunGame.cpp" />
+    <ClCompile Include="src\Screens.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

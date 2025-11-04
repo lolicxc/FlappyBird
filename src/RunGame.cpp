@@ -10,7 +10,7 @@ void RunGame()
     const int screenWidth = 800;
     const int screenHeight = 450;
 
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+    InitWindow(screenWidth, screenHeight, "FlappyBird");
 
     SetTargetFPS(60);
     SetRandomSeed(time(NULL));
