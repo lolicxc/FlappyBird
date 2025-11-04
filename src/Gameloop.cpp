@@ -3,16 +3,26 @@
 #include "Obstacles.h"
 #include "raylib.h"
 
+bool collisionDetected = false;
+
 void InitGame()
 {
 	InitPlayer();
 	InitObstacles();
+	collisionDetected = false;
 }
 
 void UpdateGame()
 {	
 	UpdatePlayer();
 	UpdateObstacles();
+	collisionDetected = CheckCollision();
+
+	if (collisionDetected)
+	{
+		// ResetPlayer();
+		// ResetObstacles();
+	}
 }
 
 void DrawGame()
@@ -20,7 +30,7 @@ void DrawGame()
 	DrawPlayer();
 	DrawObstacles();
 	DrawText("Version 0.1", 1, 1, 20, RED);
-	if (CheckCollision())
+	if (collisionDetected)
 	{
 		DrawText("Collision", GetScreenWidth() /2 ,GetScreenHeight() / 2, 20, RED);
 	}

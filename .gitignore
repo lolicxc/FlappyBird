@@ -1,4 +1,16 @@
+# Visual Studio
 .vs/
+*.vcxproj.user
+
+# Compiled binaries
 bin/
 obj/
-/x64/
+x64/
+Debug/
+Release/
+
+# Backups and temp files
+*.pdb
+*.exe
+*.log
+*.tmp
